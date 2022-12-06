@@ -15,7 +15,7 @@ const myroute:Routes=[
     component:AddemployeeComponent
   },
   {
-    path:"",
+    path:"view",
     component:ViewemployeeComponent
   }
 ]
