@@ -7,11 +7,16 @@ import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 
 const myroute:Routes=[
   {
     path:"",
     component:AddemployeeComponent
+  },
+  {
+    path:"",
+    component:ViewemployeeComponent
   }
 ]
 
@@ -19,7 +24,8 @@ const myroute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    AddemployeeComponent
+    AddemployeeComponent,
+    ViewemployeeComponent
   ],
   imports: [
     BrowserModule,
