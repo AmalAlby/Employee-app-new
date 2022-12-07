@@ -10,6 +10,7 @@
                     <table class="table table-dark table-striped">
                         <thead>
                           <tr>
+                            <th scope="col">ID</th>
                             <th scope="col">Employee Code</th>
                             <th scope="col">Name</th>
                             <th scope="col">Designation</th>
@@ -21,7 +22,8 @@
                     
                         <tbody>
                           <tr *ngFor="let i of data">
-                            <th scope="row">{{i.empcode}}</th>
+                            <th scope="row">{{i.id}}</th>
+                            <td>{{i.empcode}}</td>
                             <td>{{i.empname}}</td>
                             <td>{{i.designation}}</td>
                             <td>{{i.salary}}</td>
